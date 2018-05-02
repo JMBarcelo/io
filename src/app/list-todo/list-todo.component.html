@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let todo of todos">
+    <app-todo-item [name]="todo" (onButton)="warning($event)"></app-todo-item>
+  </li>
+</ul>
+
+<app-todo-item [name]="myName"></app-todo-item>
+<button (click)="changeMyName()">Change the name!</button>
