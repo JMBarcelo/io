@@ -14,6 +14,10 @@ import { MainComponent } from './main/main.component';
 import { LogoutComponent } from './logout/logout.component';
 import { Error404Component } from './error404/error404.component';
 
+import { CounterService } from './counter.service';
+import { Counter1Component } from './counter-1/counter-1.component';
+import { Counter2Component } from './counter-2/counter-2.component';
+
 
 const routes = [
   { path: '', pathMatch: 'full', component: MyHomeComponent },
@@ -33,14 +37,15 @@ const routes = [
     HomeComponent,
     MainComponent,
     LogoutComponent,
-    Error404Component
+    Error404Component,
+    Counter1Component,
+    Counter2Component
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     FormsModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
   exports: []
 })
